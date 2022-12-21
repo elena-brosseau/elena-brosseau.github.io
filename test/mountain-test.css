@@ -1,0 +1,359 @@
+html {
+    font-family: monospace;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    top: 50px;
+    background-image: url(../images/blue-on-white-grid.jpg);
+    background-attachment: fixed;
+    background-size: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -- Header -- */
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+header .title {
+    font-weight: normal;
+    color: white;
+    margin-left: 10px;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+}
+
+#nav-list a {
+    color: lightcyan;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+#nav-list a:hover {
+    color: lightgreen;
+}
+
+#nav-list a:active {
+    color: pink;
+}
+
+/* -- Banner -- */
+
+
+#banner {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-content {
+    width: 90%;
+    height: 90%;
+    margin: 5% 0;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*outline: 1px solid red;*/
+}
+
+/* -- Banner Window -- */
+
+.banner-window {
+    background-color: snow;
+    width: 50%;
+    max-width: 600px;
+    height: fit-content;
+    box-shadow: 5px 5px black;
+}
+
+.banner-window .window-title {
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: snow;
+    background-color: pink;
+    font-size: .75rem;
+}
+
+.window-title .title-text {
+    font-weight: normal;
+    margin: 0;
+}
+
+.window-title .title-x {
+    margin: 0;
+}
+
+.banner-window .image-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-window img {
+    width: 100%;
+    margin: 2%;
+    overflow: hidden;
+}
+
+/* -- Banner Title -- */
+
+#banner-title {
+    position: relative;
+    bottom: 10%;
+    margin: 20px;
+}
+
+#banner-title h1, #banner-title h2 {
+    background-color: snow;
+    width: fit-content;
+}
+
+#banner-title h1 {
+    font-size: 5vw;
+    margin-bottom: 0;
+}
+
+#banner-title h2 {
+    font-size: 2.5vw;
+    position: relative;
+    margin: 2% 0;
+}
+
+#banner-title h3 {
+    font-size: 4vw;
+    color: snow;
+    background-color: lightgreen;
+    box-shadow: 5px 5px black;
+    font-weight: normal;
+    width: fit-content;
+    padding: 2% 4%;
+    border-radius: 5px;
+}
+
+#banner-title h3:hover {
+    background-color:darkcyan;
+}
+
+#banner-title h3:active {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+/* -- Quote -- */
+
+.quote {
+    width: 100%;
+    background-color: snow;
+    margin-top: 5%;
+}
+
+.quote-window-title {
+    padding: 2px 10px;
+    display: flex;
+    justify-content: space-between;
+    color: snow;
+    background-color: lightseagreen;
+    font-size: .75rem;
+}
+
+.quote-title-text, .quote-title-x {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.quote mark {
+    background-color: pink;
+}
+
+.quote-text-background {
+    background-image: url(../images/woods-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    margin: 1%;
+}
+
+.quote h2 {
+    font-size: 4vw;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    line-height: 150%;
+}
+
+.quote-text-background h3 {
+    text-align: end;
+    font-size: 2vw;
+    font-weight: normal;
+    margin: 5% 10% 0 0;
+}
+
+/* -- Div 3 -- */
+
+#pics {
+    background-image: url(../images/blue-grid.jpg);
+    background-size: 1100px;
+    background-attachment: fixed;
+    height: fit-content;
+    width: 100%;
+}
+
+#pics h2 {
+    font-size: 3vw;
+    text-align: center;
+    background-color: snow;
+    width: fit-content;
+    margin: 5% auto 0;
+    padding: 0 3% 0 1%;
+}
+
+#picture-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.picture {
+    width: 25%;
+    padding: 0;
+    margin: 5%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    outline: 1px solid black;
+    box-shadow: 5px 5px black;
+}
+
+/* -- Footer -- */
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer h4 {
+    color: snow;
+    margin-left: 5%;
+}
+
+/* -- Media Queries -- */
+
+@media only screen and (max-width: 550px) {
+
+    header {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    header .title {
+        display: none;
+    }
+
+    #nav-list a {
+        font-size: 3.2vw;
+    }
+
+    #banner-content {
+        flex-direction: column;
+    }
+
+    .banner-window {
+        width: 95%;
+    }
+
+    #banner {
+        height: fit-content;
+        padding-top: 30px;
+    }
+
+    #banner-title h1 {
+        font-size: 10vw;
+    }
+    
+    #banner-title h2 {
+        font-size: 5vw;
+    }
+    
+    #banner-title h3 {
+        font-size: 8vw;
+    }
+
+    .quote h2 {
+        font-size: 7vw;
+    }
+
+    .quote h3 {
+        font-size: 4vw;
+    }
+
+    #picture-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture {
+        width: 70%;
+    }
+
+    #pics {
+        padding: 5% 0 20%;
+    }
+
+    #pics h2 {
+        font-size: 6vw;
+        margin: 10% auto;
+    }
+
+
+}
+
+/*@media only screen and (min-width: 1350px) {
+
+    #banner-title h1 {
+        font-size: 3.5rem;
+    }
+    
+    #banner-title h2 {
+        font-size: 1.75rem;
+    }
+    
+    #banner-title h3 {
+        font-size: 2.8rem;
+    }
+
+    #quote-content h2 {
+        font-size: 3.5rem;   
+    }
+}
